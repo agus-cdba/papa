@@ -1,0 +1,54 @@
+# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=14711
+
+### Tuples ###
+
+# Definición
+
+mi_tuple = tuple()
+mi_tuple2 = ()
+
+mi_tuple = (35, 1.77, "Brais", "Moure", "Brais")
+my_other_tuple = (35, 60, 30)
+
+print(mi_tuple)
+print(type(mi_tuple))
+
+# Acceso a elementos y búsqueda
+
+print(mi_tuple[0])
+print(mi_tuple[-1])
+# print(my_tuple[4]) IndexError
+# print(my_tuple[-6]) IndexError
+
+print(mi_tuple.count("Brais"))
+print(mi_tuple.index("Moure"))
+print(mi_tuple.index("Brais"))
+
+# my_tuple[1] = 1.80 'tuple' object does not support item assignment
+
+# Concatenación
+
+suma_tuple = mi_tuple + mi_tuple2
+print(suma_tuple)
+
+# Subtuplas
+
+print(suma_tuple[3:6])
+
+# Tupla mutable con conversión a lista
+
+my_tuple = list(mi_tuple)
+print(type(mi_tuple))
+
+mi_tuple[4] = "VAMO MANAO"
+mi_tuple.insert(2, "rojo")
+mi_tuple = tuple(mi_tuple)
+print(mi_tuple)
+print(type(mi_tuple))
+
+# Eliminación
+
+# del my_tuple[2] TypeError: 'tuple' object doesn't support item deletion
+
+del mi_tuple
+# print(my_tuple) NameError: name 'my_tuple' is not defined
