@@ -1,9 +1,3 @@
-
-
-### Lists ###
-
-# Definición
-
 mi_lista = list()
 mi_lista2= []
 
@@ -19,8 +13,6 @@ mi_lista2 = [35, 1.77, "hernan", "cordoba"]
 print(type(mi_lista))
 print(type(mi_lista2))
 
-# Acceso a elementos y búsqueda
-
 print(mi_lista2[0])
 print(mi_lista2[1])
 print(mi_lista2[-1])
@@ -35,16 +27,14 @@ print(nombre)
 nombre, altura, edad, apellido = mi_lista2[2], mi_lista2[1], mi_lista2[0], mi_lista2[3]
 print(edad)
 
-# Concatenación
+
 
 print(mi_lista + mi_lista2)
 
-# Creación, inserción, actualización y eliminación
-
-mi_lista2.append("hola")# agrega eso a la lista
+mi_lista2.append("hola")
 print(mi_lista2)
 
-mi_lista2.insert(80, "azul") # otra manera de agregar , y tmb agrega numeros
+mi_lista2.insert(80, "azul")
 print(mi_lista2)
 
 mi_lista2[1] = "violeta"
@@ -66,7 +56,7 @@ print(mi_lista)
 del mi_lista[2]
 print(mi_lista)
 
-# Operaciones con listas
+
 
 mi_nueva_lista = mi_lista.copy()
 
@@ -80,11 +70,11 @@ print(mi_nueva_lista)
 mi_nueva_lista.sort()
 print(mi_nueva_lista)
 
-# Sublistas
+
 
 print(mi_nueva_lista[1:3])
 
-# Cambio de tipo
+
 
 mi_lista = "Hola mundo"
 print(mi_lista)
